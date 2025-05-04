@@ -1,32 +1,29 @@
 {
-    "name": "my-website",
-    "version": "1.0.0",
-    "description": "A harmless hacker prank application",
-    "main": "main.js",
-    "scripts": {
-        "start": "serve public",
-        "build": "electron-builder"
+  "name": "hacker-prank-app",
+  "version": "1.0.0",
+  "description": "A harmless hacker prank application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.6.4"
+  },
+  "build": {
+    "appId": "com.hackerprank.app",
+    "productName": "System Security Alert",
+    "mac": {
+      "category": "public.app-category.utilities"
     },
-    "author": "",
-    "license": "MIT",
-    "dependencies": {
-        "serve": "^14.2.4"
+    "win": {
+      "target": "nsis"
     },
-    "devDependencies": {
-        "electron": "^29.0.0",
-        "electron-builder": "^24.6.4"
-    },
-    "build": {
-        "appId": "com.hackerprank.app",
-        "productName": "System Security Alert",
-        "mac": {
-            "category": "public.app-category.utilities"
-        },
-        "win": {
-            "target": "nsis"
-        },
-        "linux": {
-            "target": "AppImage"
-        }
+    "linux": {
+      "target": "AppImage"
     }
+  }
 }
