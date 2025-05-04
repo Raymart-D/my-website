@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>System Security Alert</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="hacked button.jpeg" type="image/x-icon"> <!-- Add favicon -->
+</head>
+<body>
+  <canvas id="matrix"></canvas>
+  
+  <div class="overlay">
+    <div class="message-container">
+      <div class="message">
+        YOU HAVE BEEN HACKED
+      </div>
+      <div id="countdown" class="counter">
+        System lockdown in: <span id="timer">30</span> seconds
+      </div>
+      <div id="initial-buttons">
+        <button class="button" id="fix-btn">FIX SYSTEM</button>
+      </div>
+      <div id="password-section" class="hidden">
+        <input type="password" id="password-input" placeholder="Enter admin password">
+        <button class="button" id="submit-password">Submit</button>
+        <p id="attempts">Attempts remaining: 3</p>
+      </div>
+      <div id="exit-section" class="hidden">
+        <p>This was just a harmless prank!</p>
+        <button class="button" id="exit-btn">Exit Prank</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
